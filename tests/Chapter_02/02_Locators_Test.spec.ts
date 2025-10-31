@@ -27,7 +27,8 @@ test("Locators in Playwright", async ({ page }) => {
     await page.goto("https://www.youtube.com/@testerstalk");
     await page.getByPlaceholder("Search").fill("cypress by testers talk");
     await page
-        .locator('input[name="search_query"]')
+        .locator('//input[@name="search_query"]') // Xpath
+        // .locator('input[name="search_query"]') // css selector
         .first()
         .fill("playwright typescript by testers talk");
 
