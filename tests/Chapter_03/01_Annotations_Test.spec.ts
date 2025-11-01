@@ -1,0 +1,50 @@
+import { test, expect } from "@playwright/test";
+
+test("Test 1", async ({
+    page,
+}) => {
+    // Go to URL
+    await page.goto("https://www.google.com");
+
+    // Search with Keywords - use pick locator, go to Testing from vs code sidebar -> in 'Playwright' option click -> in 'Tools' choose Pick locator option
+    await page.getByRole("combobox", { name: "Search" }).fill('chaicode')
+    await page.getByRole("combobox", { name: "Search" }).press("Enter");
+    await page.getByRole("link", { name: "ChaiCode - Home for" }).first().click()
+    // validate web page title
+    await expect(
+        page.getByRole("heading", { name: "Consistency and Community" })
+    ).toBeVisible()
+});
+
+
+test.skip("Test 2", async ({
+    page,
+}) => {
+    // Go to URL
+    await page.goto("https://www.google.com");
+
+    // Search with Keywords - use pick locator, go to Testing from vs code sidebar -> in 'Playwright' option click -> in 'Tools' choose Pick locator option
+    await page.getByRole("combobox", { name: "Search" }).fill('chaicode')
+    await page.getByRole("combobox", { name: "Search" }).press("Enter");
+    await page.getByRole("link", { name: "ChaiCode - Home for" }).first().click()
+    // validate web page title
+    await expect(
+        page.getByRole("heading", { name: "Consistency and Community" })
+    ).toBeVisible()
+});
+
+test.only("Test 3", async ({
+    page,
+}) => {
+    // Go to URL
+    await page.goto("https://www.google.com");
+
+    // Search with Keywords - use pick locator, go to Testing from vs code sidebar -> in 'Playwright' option click -> in 'Tools' choose Pick locator option
+    await page.getByRole("combobox", { name: "Search" }).fill('chaicode')
+    await page.getByRole("combobox", { name: "Search" }).press("Enter");
+    await page.getByRole("link", { name: "ChaiCode - Home for" }).first().click()
+    // validate web page title
+    await expect(
+        page.getByRole("heading", { name: "Consistency and Community" })
+    ).toBeVisible()
+});

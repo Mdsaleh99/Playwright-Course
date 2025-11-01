@@ -13,12 +13,19 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
+
+  // globalTimeout: 5 * 60 * 1000,  // all test execution timeout
+  timeout: 1 * 60 * 1000, // test time out
+  expect: { // assertion time out
+    timeout: 10000 // mili seconds
+  },
+
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 2 : 1,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
@@ -34,7 +41,9 @@ export default defineConfig({
     testIdAttribute: 'data-tab-item',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: "on",
+    // trace: 'on-first-retry',
+    actionTimeout: 10000 // action time out
   },
 
   /* Configure projects for major browsers */
