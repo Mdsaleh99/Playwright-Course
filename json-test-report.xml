@@ -1,0 +1,41 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="18.171565">
+<testsuite name="Chapter_01\02_First_Automation_Test.spec.ts" timestamp="2025-11-02T06:44:35.433Z" hostname="chromium" tests="1" failures="1" skipped="0" time="13.272" errors="0">
+<testcase name="My First playwright with typescript automation test" classname="Chapter_01\02_First_Automation_Test.spec.ts" time="13.272">
+<failure message="02_First_Automation_Test.spec.ts:3:5 My First playwright with typescript automation test" type="FAILURE">
+<![CDATA[  [chromium] › Chapter_01\02_First_Automation_Test.spec.ts:3:5 › My First playwright with typescript automation test 
+
+    TimeoutError: locator.click: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for getByRole('link', { name: 'ChaiCode - Home for' }).first()
+        - waiting for" https://www.google.com/search?q=chaicode&sca_esv=00fe7e8babcbcbce&source=hp&ei=1_0GafPvN73jseMPyanZeQ&iflsig=AOw8s4IAAAAAaQcL5yuAU8Whlsh5_zNl2NeoRXUGbHB_&ved=0ahUKEwizt9_27tKQAxW9cWwGHclUNg8Q4dUDCBA&…" navigation to finish...
+        - navigated to "https://www.google.com/search?q=chaicode&sca_esv=00fe7e8babcbcbce&source=hp&ei=1_0GafPvN73jseMPyanZeQ&iflsig=AOw8s4IAAAAAaQcL5yuAU8Whlsh5_zNl2NeoRXUGbHB_&ved=0ahUKEwizt9_27tKQAxW9cWwGHclUNg8Q4dUDCBA&…"
+        - waiting for" https://www.google.com/search?q=chaicode&sca_esv=00fe7e8babcbcbce&source=hp&ei=1_0GafPvN73jseMPyanZeQ&iflsig=AOw8s4IAAAAAaQcL5yuAU8Whlsh5_zNl2NeoRXUGbHB_&ved=0ahUKEwizt9_27tKQAxW9cWwGHclUNg8Q4dUDCBA&…" navigation to finish...
+        - navigated to "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dchaicode%26sca_esv%3D00fe7e8babcbcbce%26source%3Dhp%26ei%3D1_0GafPvN73jseMPyanZeQ%26iflsig%3DAOw8s4IAAAAAaQcL5yuAU8Whls…"
+
+
+      10 |     await page.getByRole("combobox", { name: "Search" }).fill('chaicode')
+      11 |     await page.getByRole("combobox", { name: "Search" }).press("Enter");
+    > 12 |     await page.getByRole("link", { name: "ChaiCode - Home for" }).first().click()
+         |                                                                           ^
+      13 |     // validate web page title
+      14 |     await expect(
+      15 |         page.getByRole("heading", { name: "Consistency and Community" })
+        at C:\Users\LAPTOP\OneDrive\Desktop\Playwright-Course\tests\Chapter_01\02_First_Automation_Test.spec.ts:12:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\Chapter_01-02_First_Automa-b8021--typescript-automation-test-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\Chapter_01-02_First_Automa-b8021--typescript-automation-test-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter_01-02_First_Automa-b8021--typescript-automation-test-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\Chapter_01-02_First_Automa-b8021--typescript-automation-test-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

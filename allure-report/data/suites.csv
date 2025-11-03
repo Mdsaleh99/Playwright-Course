@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","13272","My First playwright with typescript automation test","chromium","Sun Nov 02 12:14:37 IST 2025","failed","Sun Nov 02 12:14:50 IST 2025","","Chapter_01\02_First_Automation_Test.spec.ts","",""

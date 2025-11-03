@@ -1,0 +1,57 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - separator [ref=e3]
+    - iframe [ref=e8]:
+      - generic [ref=f1e2]:
+        - generic [ref=f1e3]:
+          - checkbox "I'm not a robot" [ref=f1e7]
+          - generic [ref=f1e10]: I'm not a robot
+        - generic [ref=f1e11]:
+          - generic [ref=f1e14]: reCAPTCHA
+          - generic [ref=f1e15]:
+            - link "Privacy" [ref=f1e16] [cursor=pointer]:
+              - /url: https://www.google.com/intl/en/policies/privacy/
+            - text: "-"
+            - link "Terms" [ref=f1e17] [cursor=pointer]:
+              - /url: https://www.google.com/intl/en/policies/terms/
+    - separator [ref=e9]
+    - generic [ref=e10]:
+      - text: About this page
+      - text: Our systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot.
+      - link "Why did this happen?" [ref=e11] [cursor=pointer]:
+        - /url: "#"
+      - text: "IP address: 2409:40f2:3007:32ad:71e3:1ebe:1815:cd74"
+      - text: "Time: 2025-11-02T06:44:44Z"
+      - text: "URL: https://www.google.com/search?q=chaicode&sca_esv=00fe7e8babcbcbce&source=hp&ei=1_0GafPvN73jseMPyanZeQ&iflsig=AOw8s4IAAAAAaQcL5yuAU8Whlsh5_zNl2NeoRXUGbHB_&ved=0ahUKEwizt9_27tKQAxW9cWwGHclUNg8Q4dUDCBA&uact=5&oq=chaicode&gs_lp=Egdnd3Mtd2l6IghjaGFpY29kZUg0UABYAHAAeACQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgCgAgCYAwCSBwCgBwCyBwC4BwDCBwDIBwA&sclient=gws-wiz&sei=2v0GaZvOBrXf1sQPvM3ysQ8"
+  - iframe [active] [ref=e15]:
+    - dialog [ref=f2e3]:
+      - generic [ref=f2e4]:
+        - generic [ref=f2e7]:
+          - text: Select all images with
+          - strong [ref=f2e8]: a fire hydrant
+          - generic [ref=f2e9]: Click verify once there are none left.
+        - table [ref=f2e12]:
+          - rowgroup [ref=f2e13]:
+            - row [ref=f2e14]:
+              - button [ref=f2e15]
+              - button [ref=f2e19]
+              - button [ref=f2e22]
+            - row [ref=f2e25]:
+              - button [ref=f2e26]
+              - button [ref=f2e29]
+              - button [ref=f2e32]
+            - row [ref=f2e36]:
+              - button [ref=f2e37]
+              - button [ref=f2e40]
+              - button [ref=f2e44]
+        - generic [ref=f2e48]: Please also check the new images.
+      - generic [ref=f2e52]:
+        - generic [ref=f2e53]:
+          - button "Get a new challenge" [ref=f2e55] [cursor=pointer]
+          - button "Get an audio challenge" [ref=f2e57] [cursor=pointer]
+          - button "Help" [ref=f2e59] [cursor=pointer]
+        - button "Verify" [active] [ref=f2e61] [cursor=pointer]
+```
